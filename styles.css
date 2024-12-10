@@ -1,0 +1,600 @@
+:root {
+  --primary-color: #F6F7F8;  /* g-gray */
+  --secondary-color: #FFFFFF; /* pure-white */
+  --accent-color: #C8CCD414;  /* dark */
+  --background-color: #C8CCD41A;
+  --text-color: #072635;
+  --first-color: #E3E4E6;
+  --second-color: #FFE6F1;
+  --third-color: #E0F3FA;
+  --fourth-color: #FFE6E9;
+  --fifth-color: #000000;
+  --sixth-color: #F4F0FE;
+  --seventh-color: #CBC8D4;
+  --eith-color: #7E6CAB;
+  --ninth-color: #C26EB4;
+  --tenth-color: #E66FD2;
+  --eleventh-color: #01F0D0;
+  --twefth-color: #D8FCF7;
+  --thirteenth-color: #EDEDED;
+  --fourteenth-color: #707070;
+  --body-regular-14-font-family: "Manrope" ;
+  --body-regular-14-font-family: "Manrope";
+  --normal-font: 0.875em; 
+  --extreme-normal-font: 19px;
+  --title-fonts: 0.875em;
+  --font-size-base: 1em;
+  --font-size-sm: 1.125em;
+  --font-size-md: 1.375em;
+  --font-size-lg: 1.5em;
+  --font-size-xl: 1.875em;
+  --font-size-small: 0.75em;
+
+
+}
+
+*{
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+
+.head-section{
+  display: flex;
+  justify-content: space-between;
+}
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+:root{
+  --background-color: #eeeded;
+  --main-color: #fff;
+  --text-color: #000;
+  --active-color: #01F0D0;
+  --sub-titles: #4b4a4a;
+  --font-weight: 400;
+  --font-weight-main: 700;
+}
+
+body{
+  padding: 20px;
+  background: var(--background-color);
+  font-family: "Poppins", sans-serif;
+
+}
+.nav-bar{
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--main-color);
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+  border-radius: 70px;
+  height: 72px;
+}
+.nav-bar-nav ul{
+  display: flex;
+  list-style-type: none;
+  gap: 15px;
+}
+.menu-icon{
+  display: none;
+  font-size: 30px;
+}
+.icons{
+  margin-right: 10px;
+}
+
+.nav-bar-nav a{
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  padding: 10px 15px;
+}
+a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+.personal-details{
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.personal-details, .name-and-title{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.personal-details img{
+  width:35px;
+  height: auto;
+  object-fit: cover;
+  overflow: hidden;
+}
+.setting-menu-icons{
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  gap: 15px;
+  
+}
+.name-title{
+  font-weight: 400;
+  color: var(--sub-titles);
+}
+.name-age{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.icon-name{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.personal-details-patient{
+  display: flex;
+  justify-content: space-between;
+}
+.personal-details-container::-webkit-scrollbar {
+  width: 8px;
+  background: var(--accent-color);
+  border-radius: 10px;
+}
+
+.personal-details-container::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border-radius: 4px;
+  border: 2px solid var(--main-color);
+  margin-left: 10px;
+
+}
+
+.personal-details-container::-webkit-scrollbar-thumb:hover {
+  background-color: #000000;
+}
+.personal-details-container::-webkit-scrollbar-track {
+  background-color: var(--accent-color); /* Track background color */
+  border-radius: 10px;       /* Optional: rounded edges for track */
+}
+.personal-details-container{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  overflow-y: auto;
+  max-height: calc(100% - 50px); 
+
+}
+.active{
+  background-color: var(--active-color);
+  border-radius: 20px;
+}
+ul{
+  list-style-type: none;
+}
+ul img{
+  width: 16px;
+  height: 17px;
+}
+.nav-bar-brand img{
+  width: 150px;
+  height: auto;
+}
+.patients-content{
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+}
+
+.patient-analysis{
+  margin-top: 32px;
+  display: flex;
+  gap: 32px;
+}
+.patients-personal-details{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+
+  
+}
+
+
+.patients{
+  width: 25%;
+  background-color: var(--main-color);
+  padding: 20px;
+  border-radius: 16px;
+  height: 1054px;
+}
+.patient-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.patient-nav img{
+  width: 18px;
+  height: 18px;
+}
+.content-image{
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.content-image img{
+  width: 48px;
+  height: 48px;
+}
+.name{
+  font-size: var(--extreme-normal-font);
+  font-weight: bold;
+}
+.age{
+  font-size: var(--normal-font);
+}
+.patients, .profile, .diagnosis{
+  border-radius: 16px;
+  
+} 
+.profile{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+}
+.diagnosis{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.diagnosis-history{
+  height: 673px;
+  background: var(--main-color);
+  border-radius: 16px;
+  padding: 20px;
+}
+.diagnosis-title{
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+}
+.graph-content{
+  display: flex;
+  gap: 32px;
+}
+.graph-titles{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.graph-content{
+  margin-top: 20px;
+  background: var(--accent-color);
+  padding: 15px;
+  border-radius: 16px;
+}
+.graph-main-title{
+  font-size: var(--font-size-sm);
+  font-weight: bold;
+}
+.graph-sub-title{
+  font-size: var(--normal-font);
+}
+.right-part{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.systolic, .diastolic{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.ttl{
+  font-size: 14px;
+  font-weight: bold;
+}
+.num{
+  font-size: var(--font-size-md);
+  font-weight: bold;
+}
+.average{
+  font-size: var(--normal-font);
+}
+.symbolistic{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.respiratory-rate{
+  background-color: #E0F3FA;
+  padding: 10px;
+  border-radius: 16px;
+  width: 190px;
+}
+.res{
+  font-size: var(--font-size-base);
+}
+.bp{
+  font-size: var(--font-size-xl);
+  font-weight: bold;
+}
+.rate{
+  margin-bottom: 20px;
+}
+.nom{
+  font-size: var(--normal-font);
+}
+.two{
+  background: #FFE6E9;
+}
+.three{
+  background: #FFE6F1;
+}
+.diagnostic-list{
+  background: var(--main-color);
+  padding: 20px;
+  height: 349px;
+  border-radius: 16px;
+}
+.diagnostic{
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+}
+.diagnosis-title{
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  font-size: var(--normal-font);
+}
+.head-table{
+  background: var(--accent-color);
+  border-collapse: collapse;
+  margin: 0;
+}
+.table{
+  margin-top: 20px;
+
+}
+.profile-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.profile-name{
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+}
+.profile-details{
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.top-profile{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 740px;
+  background: var(--main-color);
+  border-radius: 16px;
+  padding: 20px;
+}
+.profile-dob, .profile-date{
+  font-size: var(--normal-font);
+}
+.profile-date{
+  font-weight: bold;
+}
+.profile-dtt{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.show-info{
+  padding: 10px;
+  border-radius: 16px;
+  margin-top: 32px;
+  background-color: var(--active-color);
+}
+.bottom-profile{
+  height: 282px;
+  background: var(--main-color);
+  padding: 20px;
+  border-radius: 16px;
+}
+.lab-tt{
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+  margin-bottom: 20px;
+
+}
+.test{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--normal-font);
+}
+.result{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.myChart{
+  position: relative;
+  height: 40vh;
+  width: 35vh;
+}
+.patient-diagnosis{
+  display: flex;
+  width: 75%;
+  gap: 32px;
+}
+.diag-two{
+  display: none;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.profile-2{
+  display: none;
+}
+
+
+@media (max-width: 800px) {
+  .patient-analysis{
+    display: flex;
+    flex-direction: column;
+  }
+  .patients, .diagnosis, .profile{
+    width: 100%;
+  }
+  .list{
+    display: none;
+  }
+  .menu-icon{
+    display: flex;
+    font-size: 30px;
+  }
+  .setting-menu-icons{
+    display: none;
+  }
+  .graph-content{
+    display: flex;
+    flex-direction: column;
+  }
+  .right-part{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  hr{
+    display: none;
+  }
+  .diagnosis-history{
+    height: 830px;
+  }
+  .respiratory-rate{
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 800px) and (max-width: 1000px) {
+ 
+  .patients, .profile{
+    width: 50%;
+
+  }
+  .menu-icon{
+    display: flex;
+  }
+  .list{
+    display: none;
+  }
+  .setting-menu-icons{
+    display: none;
+  }
+  .diag-two{
+    display: flex;
+    width: 100%;
+  }
+  .graph-content{
+    display: flex;
+    flex-direction: column;
+  }
+  .right-part{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  hr{
+    display: none;
+  }
+  .profile{
+    display: none;
+   }
+   .profile-2{
+    display: flex;
+    width: 100%;
+    height: 500px;
+   }
+   .top-most{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   }
+ 
+  
+  
+}
+@media (min-width: 1000px) and (max-width: 1300px) {
+  .profile{
+    display: none;
+  }
+  .patients{
+    width: 50%;
+  }
+  .respiratory-rate{
+    width: auto;
+    padding-right: 30px;
+  }
+  .graph-content{
+    flex-direction: column;
+  }
+  .right-part{
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+  hr{
+    display: none;
+  }
+  .left-part{
+    width: 100%;
+  }
+  .profile{
+    display: none;
+   }
+   .profile-2{
+    display: flex;
+    width: 100%;
+    height: 500px;
+   }
+   .top-most{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   }
+  
+} 
+@media (max-width: 1200px) {
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+  .list{
+    display: none;
+  }
+}

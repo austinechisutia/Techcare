@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="root.css">
+
+  <title>Document</title>
+</head>
+<body>
+  <!-- MAIN CONTENT -->
+   <main>
+    <nav class="nav-bar">
+      <div class="nav-bar-brand">
+        <h1><img src="images/TestLogo.svg" alt=""></h1>
+      </div>
+      <div class="nav-bar-nav">
+        
+        <ul>
+         
+          <li class="list"><a href="#"><img src="images/home_FILL0_wght300_GRAD0_opsz24.svg" alt=""><h5>Overview</h5></a></li>
+          <li class="list active"><a href="#"><img src="images/group_FILL0_wght300_GRAD0_opsz24.svg" alt=""><h5>Patients</h5></a></li>
+          <li class="list"><a href="#"><img src="images/calendar_today_FILL0_wght300_GRAD0_opsz24.svg" alt=""><h5>Schedule</h5></a></li>
+          <li class="list"><a href="#"><img src="images/chat_bubble_FILL0_wght300_GRAD0_opsz24.svg" alt=""><h5>Message</h5></a></li>
+          <li class="list"><a href="#"><img src="images/credit_card_FILL0_wght300_GRAD0_opsz24.svg" alt=""><h5>Transaction</h5></a></li>
+
+        </ul>
+      </div>
+      <div class="personal-details">
+        <div class="image-icon">
+          <img src="images/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc.png" alt="">
+        </div>
+        <div class="name-and-title">
+          <div class="name">
+            <h5>Dr. Jose Simmions</h5>
+            <h5 class="name-title">General Practitioner</h5>
+          </div>
+          <div class="menu-icon">
+            <i class='bx bx-menu'></i>
+          </div>
+          <div class="setting-menu-icons">
+            <img src="images/settings_FILL0_wght300_GRAD0_opsz24.svg" alt="" style="width: 20px;">
+            <img src="images/more_vert_FILL0_wght300_GRAD0_opsz24.svg" alt="" style="width: 5px;">
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="patient-analysis">
+      <!-- PATIENTS -->
+   
+      <div class="patients">
+        <nav class="patient-nav">
+          <h4 class="patients-content">Patients</h4>
+          <img src="images/search_FILL0_wght300_GRAD0_opsz24.svg" alt="">
+        </nav>
+     <div class="personal-details-container" id="personal-details">
+      <div class="patients-personal-details details-class">
+      
+        <div class="icons">
+          <img src="images/more_horiz_FILL0_wght300_GRAD0_opsz24.svg" alt="">
+        </div>
+        <img src="images/layer2" alt="">
+      </div>
+     </div>
+
+        
+      </div>
+      <!-- DIAGNOSIS HISTORY -->
+     <div class="diagnosis">
+      <div class="diagnosis-history">
+        <div class="diagnosis-title">Diagnosis History</div>
+        <div class="graph-content">
+         <div class="left-part">
+          <div class="graph-titles">
+            <div class="graph-main-title">
+              Blood Pressure
+            </div>
+            <div class="graph-sub-title">
+              Last 6 months
+            </div>
+          </div>
+          <div class="graph-curve">
+            <canvas id="myChart" style="position: relative; width: 30vw;"></canvas>
+          </div>
+         </div>
+         <!-- right part -->
+          <div class="right-part">
+            <div class="systolic">
+              <p class="ttl">Systolic</p>
+              <p class="num">160</p>
+              <p class="average">Higher than Average</p>
+            </div>
+            <hr style="border: .7px solid #707070;">
+
+            <div class="diastolic">
+              <p class="ttl">Diastolic</p>
+              <p class="num">78</p>
+              <p class="average">Lower than Average</p>
+            </div>
+          </div>
+        </div>
+        <div class="symbolistic">
+          <div class="respiratory-rate">
+            <div class="symbol">
+              <img src="images/respiratory rate.svg" alt="">
+            </div>
+            <div class="res-content">
+             <div class="rate">
+              <p class="res">Respiratory Rate</p>
+              <p class="bp">20 bpm</p>
+             </div>
+             <div class="state">
+              <p class="nom">Normal</p>
+             </div>
+            </div>
+          </div>
+
+          <div class="respiratory-rate two">
+            <div class="symbol">
+              <img src="images/temperature.svg" alt="">
+            </div>
+            <div class="res-content">
+             <div class="rate">
+              <p class="res">Temperature</p>
+              <p class="bp">98.6&deg;F</p>
+             </div>
+             <div class="state">
+              <p class="nom">Normal</p>
+             </div>
+            </div>
+          </div>
+
+          <div class="respiratory-rate three">
+            <div class="symbol">
+              <img src="images/HeartBPM.svg" alt="">
+            </div>
+            <div class="res-content">
+             <div class="rate">
+              <p class="res">Heart Rate</p>
+              <p class="bp">20 bpm</p>
+             </div>
+             <div class="state">
+              <p class="nom">Lower than Average</p>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="diagnostic-list">
+        <p class="diagnostic">Diagnostic List</p>
+        <div class="table">
+          <table>
+            <tr class="head-table">
+              <th>Problem/Diagnosis</th>
+              <th>Description</th>
+              <th>Status</th>
+            </tr>
+            <tr>
+              <td>Hypertension</td>
+              <td>Chronic high blood pressure</td>
+              <td>Under Observation</td>
+            </tr>
+            <tr>
+              <td>Type 2 Diabetes</td>
+              <td>Insulin resistance and elevated blood sugar</td>
+              <td>Cured</td>
+            </tr>
+            <tr>
+              <td>Asthma</td>
+              <td>Recurrent episodes of bronchial constriction</td>
+              <td>Inactive</td>
+            </tr>
+
+          </table>
+        </div>
+      </div>
+
+     </div>
+     </div>
+      <!-- PROFILE -->
+    <div class="profile">
+     <div class="top-profile">
+      <div class="profile-container">
+        <img src="images/Layer 2.png" alt="">
+        <p class="profile-name">Jessica Taylor</p>
+      </div>
+    <div class="profile-dtt">
+      <div class="profile-details">
+        <div class="profile-icons">
+          <img src="images/BirthIcon.svg" alt="">
+        </div>
+        <div class="profile-description">
+          <p class="profile-dob">Date of Birth</p>
+          <p class="profile-date">August 23, 1996</p>
+        </div>
+      </div>
+
+      <div class="profile-details">
+        <div class="profile-icons">
+          <img src="images/FemaleIcon.svg" alt="">
+        </div>
+        <div class="profile-description">
+          <p class="profile-dob">Gender</p>
+          <p class="profile-date">Female</p>
+        </div>
+      </div>
+
+      <div class="profile-details">
+        <div class="profile-icons">
+          <img src="images/PhoneIcon.svg" alt="">
+        </div>
+        <div class="profile-description">
+          <p class="profile-dob">Contact Info</p>
+          <p class="profile-date">(415) 555-1234</p>
+        </div>
+      </div>
+
+      <div class="profile-details">
+        <div class="profile-icons">
+          <img src="images/PhoneIcon.svg" alt="">
+        </div>
+        <div class="profile-description">
+          <p class="profile-dob">Emergency Contacts</p>
+          <p class="profile-date">(415) 555-5678</p>
+        </div>
+      </div>
+
+      <div class="profile-details">
+        <div class="profile-icons">
+          <img src="images/InsuranceIcon.svg" alt="">
+        </div>
+        <div class="profile-description">
+          <p class="profile-dob">Insurance Provider</p>
+          <p class="profile-date">Sunrise Health Assuarance</p>
+        </div>
+      </div>
+
+      
+    </div>
+    <button class="show-info">
+      Show All Information
+    </button>
+     </div>
+
+     <div class="bottom-profile">
+      <div class="lab-results">
+        <p class="lab-tt">Lab Results</p>
+        <div class="result">
+          <div class="test">
+            <p class="test-result">Blood Tests</p>
+            <div class="icon"><img src="images/download_FILL0_wght300_GRAD0_opsz24 (1).svg" alt=""></div>
+          </div>
+
+          <div class="test">
+            <p class="test-result">CT Scans</p>
+            <div class="icon"><img src="images/download_FILL0_wght300_GRAD0_opsz24 (1).svg" alt=""></div>
+          </div>
+
+          <div class="test">
+            <p class="test-result">Radiology Reports</p>
+            <div class="icon"><img src="images/download_FILL0_wght300_GRAD0_opsz24 (1).svg" alt=""></div>
+          </div>
+
+          <div class="test">
+            <p class="test-result">X-Rays</p>
+            <div class="icon"><img src="images/download_FILL0_wght300_GRAD0_opsz24 (1).svg" alt=""></div>
+          </div>
+
+          <div class="test">
+            <p class="test-result">Urine Tests</p>
+            <div class="icon"><img src="images/download_FILL0_wght300_GRAD0_opsz24 (1).svg" alt=""></div>
+          </div>
+        </div>
+      </div>
+     </div>
+    </div>
+    
+    </section>
+    <!-- profile22 -->
+    <div class="profile profile-2">
+      <div class="top-profile">
+        <div class="top-most">
+          <div class="profile-container">
+            <img src="images/Layer 2.png" alt="">
+            <p class="profile-name">Jessica Taylor</p>
+          </div>
+        <div class="profile-dtt">
+          <div class="profile-details">
+            <div class="profile-icons">
+              <img src="images/BirthIcon.svg" alt="">
+            </div>
+            <div class="profile-description">
+              <p class="profile-dob">Date of Birth</p>
+              <p class="profile-date">August 23, 1996</p>
+            </div>
+          </div>
+    
+          <div class="profile-details">
+            <div class="profile-icons">
+              <img src="images/FemaleIcon.svg" alt="">
+            </div>
+            <div class="profile-description">
+              <p class="profile-dob">Gender</p>
+              <p class="profile-date">Female</p>
+            </div>
+          </div>
+    
+          <div class="profile-details">
+            <div class="profile-icons">
+              <img src="images/PhoneIcon.svg" alt="">
+            </div>
+            <div class="profile-description">
+              <p class="profile-dob">Contact Info</p>
+              <p class="profile-date">(415) 555-1234</p>
+            </div>
+          </div>
+    
+          <div class="profile-details">
+            <div class="profile-icons">
+              <img src="images/PhoneIcon.svg" alt="">
+            </div>
+            <div class="profile-description">
+              <p class="profile-dob">Emergency Contacts</p>
+              <p class="profile-date">(415) 555-5678</p>
+            </div>
+          </div>
+    
+          <div class="profile-details">
+            <div class="profile-icons">
+              <img src="images/InsuranceIcon.svg" alt="">
+            </div>
+            <div class="profile-description">
+              <p class="profile-dob">Insurance Provider</p>
+              <p class="profile-date">Sunrise Health Assuarance</p>
+            </div>
+          </div>
+    
+          
+        </div>
+        </div>
+     <button class="show-info">
+       Show All Information
+     </button>
+      </div>
+ 
+      <div class="bottom-profile">
+       <div class="lab-results">
+         <p class="lab-tt">Lab Results</p>
+         <div class="result">
+           <div class="test">
+             <p class="test-result">Blood Tests</p>
+             <div class="icon"><img src="images/download_FILL0_wght300_GRAD0_opsz24 (1).svg" alt=""></div>
+           </div>
+ 
+           <div class="test">
+             <p class="test-result">CT Scans</p>
+             <div class="icon"><img src="images/download_FILL0_wght300_GRAD0_opsz24 (1).svg" alt=""></div>
+           </div>
+ 
+           <div class="test">
+             <p class="test-result">Radiology Reports</p>
+             <div class="icon"><img src="images/download_FILL0_wght300_GRAD0_opsz24 (1).svg" alt=""></div>
+           </div>
+ 
+           <div class="test">
+             <p class="test-result">X-Rays</p>
+             <div class="icon"><img src="images/download_FILL0_wght300_GRAD0_opsz24 (1).svg" alt=""></div>
+           </div>
+ 
+           <div class="test">
+             <p class="test-result">Urine Tests</p>
+             <div class="icon"><img src="images/download_FILL0_wght300_GRAD0_opsz24 (1).svg" alt=""></div>
+           </div>
+         </div>
+       </div>
+      </div>
+     </div>
+   </main>
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   <script src="main.js"></script>
+</body>
+</html>
